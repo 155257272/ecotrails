@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — EcoTrails</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">EcoTrails</a>
+      <button id="navToggle" class="hamburger">☰</button>
+      <nav id="siteNav" class="nav">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link active" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero" style="background-image: url('./images/about-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>About EcoTrails</h1>
+      <p class="lead">Connecting travelers with sustainable adventures worldwide.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT CONTENT -->
+  <section class="container about-section">
+    <h2>Our Mission</h2>
+    <p>
+      EcoTrails was founded with one vision: to make travel more responsible,
+      sustainable, and enriching for both travelers and the planet.
+      We curate authentic experiences that respect local cultures,
+      protect natural environments, and leave lasting positive impacts.
+    </p>
+
+    <h2>What We Do</h2>
+    <ul>
+      <li>Provide eco-friendly guides for mountains, beaches, and forests.</li>
+      <li>Promote local communities and businesses.</li>
+      <li>Encourage travelers to explore responsibly with minimal footprint.</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> EcoTrails — All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("navToggle").addEventListener("click", () => {
+      document.getElementById("siteNav").classList.toggle("open");
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

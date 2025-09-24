@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — EcoTrails</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">EcoTrails</a>
+      <button id="navToggle" class="hamburger">☰</button>
+      <nav id="siteNav" class="nav">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero" style="background-image: url('./images/contact-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Contact EcoTrails</h1>
+      <p class="lead">We’d love to hear from you! Feedback, ideas, or just say hello.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="container contact-section">
+    <div class="form-wrapper">
+      <h2>Send us a message</h2>
+      <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <select>
+            <option>Prefer not to say</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Country</label>
+          <input type="text" placeholder="Your Country">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="4" placeholder="Write your message..."></textarea>
+        </div>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h2>Contact details</h2>
+      <p>Email: <a href="mailto:vanshsingadiya@gmail.com">vanshsingadiya@gmail.com</a></p>
+      <h3>Follow us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/vanshsingadiya" target="_blank"><img src="./images/insta.jpg" alt="Instagram"></a>
+        <a href="https://x.com/temp_use56990" target="_blank"><img src="./images/x.jpg" alt="Twitter/X"></a>
+        <a href="https://www.facebook.com/profile.php?id=61566020436625" target="_blank"><img src="./images/facebook.jpg" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/vansh-singadiya-7a6b85383" target="_blank"><img src="./images/linkedin.jpg" alt="LinkedIn"></a>
+        <a href="mailto:vanshsingadiya@gmail.com"><img src="./images/email.jpg" alt="Email"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> EcoTrails — All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("navToggle").addEventListener("click", () => {
+      document.getElementById("siteNav").classList.toggle("open");
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

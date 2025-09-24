@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoTrails — Explore Nature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">EcoTrails</a>
+      <button id="navToggle" class="hamburger">☰</button>
+      <nav id="siteNav" class="nav">
+        <ul>
+          <li><a class="nav-link active" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image: url('./images/mountains.jpg')">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Explore Nature. Travel Responsibly.</h1>
+      <p class="lead">Handpicked mountains, beaches, and forests — sustainable guides and local experiences.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="about.html">Learn More</a>
+        <a class="btn ghost" href="#featured">Featured</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section id="featured" class="featured container">
+    <h2 class="section-title">Featured Destinations</h2>
+    <p class="section-sub">Sustainably curated places to inspire your next trip.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-media"><img src="./images/mountains.jpg" alt="Mountains"></div>
+        <div class="card-body">
+          <h3>Mountains</h3>
+          <p>Trail guides, viewpoints and cozy eco-lodges.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-media"><img src="./images/beach.jpg" alt="Beach"></div>
+        <div class="card-body">
+          <h3>Beaches</h3>
+          <p>Hidden coves and sustainable stays along the shore.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-media"><img src="./images/forest.jpg" alt="Forest"></div>
+        <div class="card-body">
+          <h3>Forests</h3>
+          <p>Wildlife-friendly trails and peaceful green escapes.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits container">
+    <div class="benefit">
+      <h4>Sustainable</h4>
+      <p>Low-impact travel with eco-tips for every journey.</p>
+    </div>
+    <div class="benefit">
+      <h4>Local-first</h4>
+      <p>Supporting communities and local guides.</p>
+    </div>
+    <div class="benefit">
+      <h4>Beginner-friendly</h4>
+      <p>Practical routes and safety tips for all levels.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> EcoTrails — All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("navToggle").addEventListener("click", () => {
+      document.getElementById("siteNav").classList.toggle("open");
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
